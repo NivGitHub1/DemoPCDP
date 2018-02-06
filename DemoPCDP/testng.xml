@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DemoPCDP">
+  <test thread-count="5" name="TestDemoPCDP">
+    <classes>
+      <class name="com.selenium.test.DemoPCDP.InvalidCredentil"/>
+      <class name="com.selenium.test.DemoPCDP.ViewPCDPItems"/>
+      <class name="com.selenium.test.DemoPCDP.ViewCompletionScore"/>
+      <class name="com.selenium.test.DemoPCDP.PCDP_Login"/>
+      <class name="com.selenium.test.DemoPCDP.LandingPage"/>
+    </classes>
+  </test> <!-- TestDemoPCDP -->
+</suite> <!-- DemoPCDP -->

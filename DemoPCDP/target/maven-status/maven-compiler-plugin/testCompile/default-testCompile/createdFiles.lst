@@ -1,0 +1,6 @@
+com\selenium\test\DemoPCDP\InvalidCredentil.class
+com\selenium\test\DemoPCDP\PCDP_Login.class
+com\selenium\test\DemoPCDP\Utility.class
+com\selenium\test\DemoPCDP\LandingPage.class
+com\selenium\test\DemoPCDP\ViewPCDPItems.class
+com\selenium\test\DemoPCDP\ViewCompletionScore.class

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [DemoPCDP]">
+  <test name="TestDemoPCDP(failed)">
+    <classes>
+      <class name="com.selenium.test.DemoPCDP.InvalidCredentil">
+        <methods>
+          <include name="launchURL"/>
+          <include name="invalidCredential"/>
+        </methods>
+      </class> <!-- com.selenium.test.DemoPCDP.InvalidCredentil -->
+      <class name="com.selenium.test.DemoPCDP.PCDP_Login">
+        <methods>
+          <include name="loginView"/>
+          <include name="launchURL"/>
+        </methods>
+      </class> <!-- com.selenium.test.DemoPCDP.PCDP_Login -->
+      <class name="com.selenium.test.DemoPCDP.ViewCompletionScore">
+        <methods>
+          <include name="completionScore"/>
+          <include name="launchURL"/>
+        </methods>
+      </class> <!-- com.selenium.test.DemoPCDP.ViewCompletionScore -->
+      <class name="com.selenium.test.DemoPCDP.ViewPCDPItems">
+        <methods>
+          <include name="launchURL"/>
+          <include name="PCDPItems"/>
+        </methods>
+      </class> <!-- com.selenium.test.DemoPCDP.ViewPCDPItems -->
+      <class name="com.selenium.test.DemoPCDP.LandingPage">
+        <methods>
+          <include name="launchURL"/>
+          <include name="landingPageElements"/>
+        </methods>
+      </class> <!-- com.selenium.test.DemoPCDP.LandingPage -->
+    </classes>
+  </test> <!-- TestDemoPCDP(failed) -->
+</suite> <!-- Failed suite [DemoPCDP] -->
