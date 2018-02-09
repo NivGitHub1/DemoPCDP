@@ -25,6 +25,7 @@ public class ViewCompletionScore {
 	
 	@BeforeTest
 	public void launchURL() throws IOException{
+		System.out.println("Test: ViewCompletionScore...");
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -72,6 +73,8 @@ public class ViewCompletionScore {
 		//logout
 		Utility.clickUsingXpath(driver, objectRepo, "logout_btn_xpath");
 		System.out.println("User logged out");
+		
+		System.out.println("------------------------------------------");
 	}
 
 	@AfterTest

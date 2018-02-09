@@ -24,6 +24,7 @@ public class InvalidCredentil {
 	
 	@BeforeTest
 	public void launchURL() throws IOException{
+		System.out.println("Test: InvalidCredential...");
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -55,7 +56,7 @@ public class InvalidCredentil {
 		else{
 			System.out.println("Test is failed");
 		}	
-	//change	
+		System.out.println("------------------------------------------");
 	}
 	
 	@AfterTest	

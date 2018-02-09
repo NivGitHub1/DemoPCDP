@@ -3,13 +3,36 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
+      <class name="com.selenium.test.DemoPCDP.ViewCompletionScore">
+        <methods>
+          <include name="completionScore"/>
+          <include name="launchURL"/>
+        </methods>
+      </class> <!-- com.selenium.test.DemoPCDP.ViewCompletionScore -->
+      <class name="com.selenium.test.DemoPCDP.PCDP_Login">
+        <methods>
+          <include name="loginView"/>
+          <include name="launchURL"/>
+        </methods>
+      </class> <!-- com.selenium.test.DemoPCDP.PCDP_Login -->
+      <class name="com.selenium.test.DemoPCDP.LandingPage">
+        <methods>
+          <include name="launchURL"/>
+          <include name="landingPageElements"/>
+        </methods>
+      </class> <!-- com.selenium.test.DemoPCDP.LandingPage -->
       <class name="com.selenium.test.DemoPCDP.ViewPCDPItems">
         <methods>
           <include name="launchURL"/>
           <include name="PCDPItems"/>
-          <include name="closeBrowser"/>
         </methods>
       </class> <!-- com.selenium.test.DemoPCDP.ViewPCDPItems -->
+      <class name="com.selenium.test.DemoPCDP.InvalidCredentil">
+        <methods>
+          <include name="launchURL"/>
+          <include name="invalidCredential"/>
+        </methods>
+      </class> <!-- com.selenium.test.DemoPCDP.InvalidCredentil -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -27,6 +27,7 @@ public class LandingPage {
 	
 	@BeforeTest
 	public void launchURL() throws IOException{
+		System.out.println("Test: LandingPage...");
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -48,8 +49,11 @@ public class LandingPage {
 		//text on forgot password link
 		String forgotPwdLink = Utility.getTextUsingXpath(driver, objectRepo, "forgot_pwd_link_xpath");
 		System.out.println(forgotPwdLink);
+		
+		System.out.println("------------------------------------------");
 
 	}
+	
 	
 	@AfterTest
 	

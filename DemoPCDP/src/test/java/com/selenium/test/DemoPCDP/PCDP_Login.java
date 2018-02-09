@@ -27,6 +27,7 @@ public class PCDP_Login {
 
 	@BeforeTest
 	public void launchURL() throws IOException{
+		System.out.println("Test: PCDP_Login...");
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -74,6 +75,8 @@ public class PCDP_Login {
 //		driver.findElement(By.xpath("//*[@id='bs-example-navbar-collapse-1']/ul/li[3]/a/span")).click();
 		Utility.clickUsingXpath(driver, objectRepo, "logout_btn_xpath");
 		System.out.println("User logged out");
+		
+		System.out.println("------------------------------------------");
 		
 	}
 	

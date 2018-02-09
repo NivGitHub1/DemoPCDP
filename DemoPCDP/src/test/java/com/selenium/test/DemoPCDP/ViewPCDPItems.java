@@ -24,6 +24,7 @@ public class ViewPCDPItems {
 	
 	@BeforeTest
 	public void launchURL() throws IOException{
+		System.out.println("Test: ViewPCDPItems...");
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
